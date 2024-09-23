@@ -1,0 +1,23 @@
+﻿<Page x:Class="GuessNumberWPF.ScorePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GuessNumberWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ScorePage">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
+
+    <Grid x:Name="grdScore" Background="Blue" Grid.IsSharedSizeScope="True">
+        <Label x:Name="lblWinLoose" Content="YOU WIN ! ! !" Margin="95,62,41,275" FontSize="60" Foreground="White" Grid.IsSharedSizeScope="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" IsManipulationEnabled="True"/>
+        <Button  x:Name="btnRestart" Content="Restart" Margin="80,293,455,72" Width="370" HorizontalAlignment="Center" FontSize="25" ForceCursor="True" Background="Red" Click="btnRestart_Click"/>
+        <Button x:Name="btnExit" Content="Exit" Margin="455,293,80,72" Width="370" FontSize="25" ForceCursor="True" HorizontalAlignment="Center" Background="Red" Click="btnExit_Click"/>
+
+    </Grid>
+</Page>
